@@ -1,0 +1,176 @@
+        :root {
+            --primary-pink: #c2185b;
+            --dark-pink: #8e0038;
+            --light-pink: #fce4ec;
+            --soft-bg: #fff8fa;
+            --dark-text: #2c2c2c;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+            background-color: var(--soft-bg);
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Accent Colors & Buttons */
+        .text-pink {
+            color: var(--primary-pink) !important;
+        }
+
+        .bg-pink {
+            background-color: var(--primary-pink) !important;
+        }
+
+        .btn-pink {
+            background-color: var(--primary-pink);
+            color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-pink:hover {
+            background-color: var(--dark-pink);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(194, 24, 91, 0.3);
+        }
+
+        .btn-outline-pink {
+            border: 2px solid var(--primary-pink);
+            color: var(--primary-pink);
+            border-radius: 30px;
+            padding: 10px 28px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-pink:hover {
+            background-color: var(--primary-pink);
+            color: #ffffff;
+        }
+
+        /* Hero Header Styling */
+        .hero-banner {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            padding: 100px 0;
+            border-bottom: 4px solid var(--primary-pink);
+        }
+
+        /* Custom Cards Styling */
+        .custom-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(194, 24, 91, 0.15);
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background-color: var(--light-pink);
+            color: var(--primary-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 20px auto;
+        }
+
+        /* Gallery Vector Boxes (No Pictures) */
+        .gallery-box {
+            background: #ffffff;
+            border: 2px dashed var(--primary-pink);
+            border-radius: 16px;
+            padding: 40px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-box:hover {
+            background-color: var(--light-pink);
+        }
+
+        .price-badge {
+            background-color: var(--light-pink);
+            color: var(--dark-pink);
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+
+ /* Hero Header Styling */
+.hero-banner {
+    position: relative;
+    min-height: 600px;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 4px solid var(--primary-pink);
+}
+
+/* Hero Background Image */
+.hero-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Dark overlay */
+.hero-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Hero Text */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+/* Style Showcase Images */
+.project-img-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Image hover effect */
+.gallery-box:hover .project-img {
+    transform: scale(1.05);
+}
