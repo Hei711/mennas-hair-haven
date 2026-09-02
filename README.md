@@ -3,8 +3,11 @@ MENAS-HAVEN-HAIR
 **Team Members Contribution**
 
 The team members who worked on this project are:
+
 -Mennas
+
 -Hei Ngaaruhe
+
 -Christangel 
 
 **About this project**
